@@ -1,0 +1,108 @@
+@import "../../App.scss";
+
+.navbar {
+  width: 100%;
+  // background-color: inherit;
+  background: linear-gradient(to top, transparent 0%, rgba(0, 0, 0, 0.3) 50%);
+  color: white;
+  font-size: 14px;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+
+  &.scrolled {
+    background-color: inherit;
+  }
+  .container {
+    padding: 0 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+    .left {
+      display: flex;
+      align-items: center;
+      img {
+        height: 25px;
+        margin-right: 40px;
+
+        @include mobile {
+          margin: 0 5px 0 -35px;
+        }
+      }
+      span {
+        margin-right: 20px;
+        cursor: pointer;
+
+        @include tablet {
+          display: none;
+        }
+
+        @include mobile {
+          margin-right: 13px;
+          margin-left: 5px;
+        }
+        &.main {
+          @include tablet {
+            display: block;
+          }
+        }
+      }
+    }
+    .right {
+      display: flex;
+      align-items: center;
+      img {
+        height: 30px;
+        width: 30px;
+        border-radius: 5px;
+        object-fit: cover;
+        cursor: pointer;
+      }
+      .icon {
+        margin: 0 15px;
+        cursor: pointer;
+        @include mobile {
+          margin: 0 8px;
+        }
+      }
+
+      .notification {
+        @include mobile {
+          margin-left: 40px;
+        }
+      }
+
+      .search,
+      .username {
+        @include mobile {
+          display: none;
+        }
+      }
+
+      .profile {
+        .options {
+          display: none;
+          background-color: var(--main-color);
+          border-radius: 5px;
+        }
+        span {
+          padding: 10px;
+          cursor: pointer;
+        }
+
+        &:hover {
+          .options {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+
+            @include mobile {
+              margin: 5px 0 0 -40px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
