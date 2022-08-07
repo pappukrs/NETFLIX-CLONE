@@ -1,0 +1,78 @@
+.header{
+    width:100%;
+    height:60px;
+    background-color: black;
+    justify-content: space-between;
+    display:flex;
+}
+.l-header{
+    display:flex;
+    padding-left: 100px;
+
+}
+
+.vl {
+    border-left: 3px solid white;
+    height: 60px;
+  }
+
+  .l-help{
+    color:white;
+    /* align-self: center; */
+    padding:10px 5px;
+    font-size: 30px;
+  }
+
+  .r-header{
+    color:white;
+    /* align-self: center; */
+    padding:10px 5px;
+    font-size: 30px;
+    padding-right:220px;
+  }
+
+ .bodyContent{
+    display:flex;
+    flex-direction: column;
+    gap:8px;
+    border:5px solid red;
+    margin-left:10%;
+    margin-right:10%;
+ }
+   .backtohomme{
+    font-size: 20px;
+    color:red;
+   }
+   .backtohomme:hover{
+    text-decoration: underline red;
+    cursor:pointer;
+   }
+  .netflixinfo{
+   font-size: 40px;
+   font-weight: bold;
+
+  }
+
+  .third{
+    display:flex;
+    border:5px solid red;
+    flex-direction: row;
+   gap:25px;
+   height:auto;
+  }
+
+  .third>:nth-child(1){
+    border:3px solid green;
+    flex:7;
+  }
+  .third>:nth-child(2){
+    border:3px solid black;
+    flex:3;
+  }
+  hr{
+    width:100%;
+    color:azure;
+  
+    margin-top:70px;
+    margin-bottom:70px;
+  }
